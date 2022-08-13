@@ -7,8 +7,13 @@ module.exports = {
   },
   plugins: ['@typescript-eslint/eslint-plugin'],
   extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended'
+  ],
+  'prettier/prettier': [
+    'error',
+    {
+      'endOfLine': 'auto',
+    }
   ],
   root: true,
   env: {
